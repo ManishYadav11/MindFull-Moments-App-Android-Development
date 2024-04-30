@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:textAlignment="center"
+    android:gravity="bottom"
+    android:layout_height="190dp"
+    tools:ignore="RtlCompat">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dashboard_background"
+        android:contentDescription="@string/header_images" />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welocme_manish"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#9C27B0"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manish123_gmail_com"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_below="@id/text_welcome"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D2D2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ActivityFragment">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="23dp"
+            android:text="Guided Activity"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/guided"
+            android:scaleType="centerCrop"
+            android:contentDescription="Guided Activity Image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/guided_activities_are_designed_to_help_children_achieve_specific_learning_goals_while_allowing_them_autonomy_to_explore_and_use_their_imagination_the_adult_guides_the_activity_by_providing_support_asking_open_ended_questions_making_encouraging_comments_and_actively_observing_the_child_s_interests_skills_and_challenges"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/various_activities"
+            android:background="#D8B971"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#8E24AA"/>
+<!--        Activity 1-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="1. Deep Breathing "
+            android:textColor="#8E24AA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/breathing2"
+            android:scaleType="centerCrop"
+            android:contentDescription="Guided Activity 1 Image" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:padding="16dp"
+                android:text="why Practicing Deep Breathing ?"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/thinking_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-7dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@id/text_view"
+                android:src="@drawable/thinking" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unlike_normal_breathing_taking_deep_breaths_encourages_you_to_slow_down_and_pay_attention_to_your_body_as_you_inhale_and_exhale"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deep_breathing_btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:text="@string/start_deep_breathing"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+<!--        Activity 2-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="2. Body Exercises "
+            android:textColor="#8E24AA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engaging in regular body exercises offers numerous advantages for both physical and mental well-being. Firstly, physical exercises such as cardiovascular activities, strength training, and flexibility exercises contribute to maintaining a healthy weight, improving cardiovascular health, and enhancing overall physical fitness. These exercises help strengthen muscles, increase endurance, and improve joint flexibility, reducing the risk of injuries and promoting better posture and balance."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/exercises"
+            android:scaleType="centerCrop"
+            android:contentDescription="Guided Activity 2 Image" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_exercise_btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:text="Exercise"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:id="@+id/homeFragment"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Logo and branding with rounded shape -->
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/circular_background"
+                android:scaleType="centerCrop" />
+
+            <!-- Welcome message with emoji image -->
+            <TextView
+                android:id="@+id/welcomeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Mindful Moments 🌿"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#D21919"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Text about our work -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Mindful Moments, your personal guide to inner peace and well-being. 🌿 Our app offers a diverse range of guided meditation sessions and mindfulness activities designed to help you relax, reduce stress, and cultivate mindfulness in your daily life. Whether you're new to mindfulness or a seasoned practitioner, Mindful Moments provides personalized recommendations, progress tracking, and community support to help you on your journey to greater self-awareness and emotional balance. With our easy-to-use interface and convenient reminders, you can integrate mindfulness seamlessly into your routine and experience the transformative power of living in the present moment. Start your journey to a calmer, more mindful life with Mindful Moments today. 🧘‍♂️"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Explore more button with gradient background -->
+            <Button
+                android:id="@+id/exploreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore More"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="#FF4081"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Social sharing buttons with elevation and ripple effect -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+
+                <ImageButton
+                    android:id="@+id/shareOnFacebookButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/fblogo"
+                    android:contentDescription="Share on Facebook"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="onFacebookShareClick"
+                    android:elevation="4dp"
+                    android:translationZ="2dp"
+                    android:scaleType="centerInside"
+                    android:padding="12dp"
+                    android:layout_marginEnd="16dp" />
+
+                <ImageButton
+                    android:id="@+id/shareOnTwitterButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/twitteer_icon"
+                    android:contentDescription="Share on Twitter"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="onTwitterShareClick"
+                    android:elevation="4dp"
+                    android:translationZ="2dp"
+                    android:scaleType="centerInside"
+                    android:padding="12dp"
+                    android:layout_marginEnd="16dp" />
+
+                <ImageButton
+                    android:id="@+id/rating_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/rating_icon"
+                    android:contentDescription="Rate us!"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:elevation="4dp"
+                    android:translationZ="2dp"
+                    android:scaleType="centerInside"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

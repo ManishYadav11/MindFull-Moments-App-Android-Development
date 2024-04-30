@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".DeepBreathingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deep Breathing Exercise 🧘‍♀️"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewGuide"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/breathinandout"
+        android:scaleType="fitCenter"
+        android:contentDescription="Deep Breathing Guide"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 1: Sit or lie down in a comfortable position. 🧘‍♂️"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 2: Inhale slowly through your nose, feeling your belly expand. 🌬️"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 3: Hold your breath for a few seconds. 🤏"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 4: Exhale slowly through your mouth, feeling your belly contract. 🌬️"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 5: Repeat the cycle for several minutes. 🔁"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonStartBreathing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Deep Breathing 🚀"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:onClick="startDeepBreathing"/>
+
+</LinearLayout>
